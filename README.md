@@ -1,5 +1,5 @@
 # Minecraft Python Autoclicker
-Python Autoclicker designed for Minecraft to click automatically while holding the left button
+Python Autoclicker designed for Minecraft to click automatically while holding the left button. You need to turn on Minecraft or it will not work.
 # Requirements
 - pip install pywin32
 - pip install dearpygui
