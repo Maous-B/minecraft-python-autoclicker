@@ -27,7 +27,7 @@ def AutoClicker():
     while True:
         title2 = win32gui.GetWindowText(win32gui.GetForegroundWindow())
         title = win32gui.FindWindow(None, None)
-        if "Minecraft" in title2 or "Lunar" in title2 or "Badlion" in title2 or "Client" in title2 or "AZ" in title2 or "Arckade" in title2:
+        if "Minecraft" in title2 or "Lunar" in title2 or "Badlion" in title2 or "Client" in title2 or "AZ" in title2:
             title = win32gui.FindWindow(None, title2)
             if win32api.GetAsyncKeyState(0x01) < 0 and toggling:
                 lParam = win32api.MAKELONG(0,0)
@@ -47,7 +47,6 @@ with dpg.window(tag="Primary Window"):
     checkbox_ = dpg.add_checkbox(label = "Toggle", callback=Toggle)
     slider_float1 = dpg.add_slider_float(label="min cps", default_value=8, max_value=100)
     slider_float2 = dpg.add_slider_float(label="max cps", default_value=12, max_value=100)
-    #color_picker = dpg.add_color_picker(label="Color Picker", width=200, height=200)
     t1 = threading.Thread(target=AutoClicker)
     t1.start()
 dpg.create_viewport(title=string_title, width=50, height=50)
