@@ -4,5 +4,5 @@ Python Autoclicker designed for Minecraft to click automatically while holding t
 - pip install pywin32
 - pip install dearpygui
 # Screenshot
-![image](https://user-images.githubusercontent.com/79797065/162840959-bb1880c1-d384-4d66-b541-583d602246fe.png)
+![image](https://user-images.githubusercontent.com/79797065/163204627-482c04e3-a231-42b0-a6b3-e50948d620c7.png)
 
